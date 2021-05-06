@@ -2,11 +2,11 @@
 
 > influx时序数据写客户端
 
-    问题：直接使用influx client或API写数据时，没有统一定义格式规范
-    解决：用protobuf定义格式规范，protoc生成套路代码
+    问题：直接使用influx client或API写数据时，没有统一定义，不便统一审查和管理
+    解决：用protobuf定义格式规范，protoc生成写入端代码
     
 #### 一、格式规范
-    * 时序数据表名、标签名和字段名均为下划线风格;
+    * 时序数据表名、标签名和字段名均为snake风格，单词小写且间隔为下划线
     * schema的定义三层嵌套，顶层为类别，中层为表，底层为标签或值
     举例kubernetes数据：
     message kubernetes {
@@ -58,9 +58,8 @@
  #### 二、代码生成
 
     安装：
-    * go install github.com/LilithGames/hunter/protoc-gen-metric
+    * go install github.com/LilithGames/hunter/protoc-gen-series
     * go install github.com/golang/protobuf/protoc-gen-go
     使用：
     1. 编写指定时序数据的protobuf文件
-    2. 使用protoc-gen-go生成代码，如protoc -I . --go_out=. ./testdata/proto/*
-    3. 使用protoc-gen-metric生成代码，如protoc -I . --metric_out=. ./testdata/proto/*
+    2. 使用protoc生成代码，如protoc -I . --go_out=. --series_out=. ./testdata/proto/*

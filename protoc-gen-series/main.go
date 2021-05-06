@@ -3,5 +3,5 @@ package main
 import pgs "github.com/lyft/protoc-gen-star"
 
 func main() {
-	pgs.Init(pgs.DebugEnv("DEBUG")).RegisterModule(NewMetric()).Render()
+	pgs.Init(pgs.DebugEnv("DEBUG")).RegisterModule(newSeries()).Render()
 }
