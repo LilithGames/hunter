@@ -15,8 +15,8 @@ type {{ $project }}Writer interface {
 	Flush()
 	Errors() <- chan error
 	{{- range .Messages -}}{{ $table := upperCamelCase . }}
-	Write{{ $table }}Point(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field) error
-	Write{{ $table }}PointWithTime(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field, timestamp time.Time) error
+	Write{{ $table }}Point(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field)
+	Write{{ $table }}PointWithTime(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field, timestamp time.Time)
 	{{- end }}
 }
 
@@ -36,21 +36,15 @@ func (w *{{ lowerCamelCase . }}Writer) Errors() <-chan error {
 	return w.WriteAPI.Errors()
 }
 {{ range .Messages }}{{ $table := upperCamelCase . }}{{ $lowerSnakeTable := lowerSnakeCase . }}
-func (w *{{ $lowerCamelProject }}Writer) Write{{ $table }}Point(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field) error {
-	return w.Write{{ $table }}PointWithTime(tag, field, time.Now())
+func (w *{{ $lowerCamelProject }}Writer) Write{{ $table }}Point(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field) {
+	w.Write{{ $table }}PointWithTime(tag, field, time.Now())
 }
 
-func (w *{{ $lowerCamelProject }}Writer) Write{{ $table }}PointWithTime(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field, timestamp time.Time) error {
-	if tag == nil || field == nil {
-		return errors.New("nil point error")
-	}
-	point := influxdb.NewPointWithMeasurement("{{ $lowerSnakeProject }}_{{ $lowerSnakeTable }}")
-	{{ range ( selectSubMsg . "tag" )}}
-	point.AddTag("{{ lowerSnakeCase . }}", tag.{{ upperCamelCase . }}){{ end }}
-	{{ range ( selectSubMsg . "field")}}
+func (w *{{ $lowerCamelProject }}Writer) Write{{ $table }}PointWithTime(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field, timestamp time.Time) {
+	point := influxdb.NewPointWithMeasurement("{{ $lowerSnakeProject }}_{{ $lowerSnakeTable }}"){{ range ( selectSubMsg . "tag" )}}
+	point.AddTag("{{ lowerSnakeCase . }}", tag.{{ upperCamelCase . }}){{ end }}{{ range ( selectSubMsg . "field")}}
 	point.AddField("{{ lowerSnakeCase . }}", field.{{ upperCamelCase . }}){{ end }}
 	w.WriteAPI.WritePoint(point)
-	return nil
 }
 {{- end -}}
 {{ end }}

@@ -3,7 +3,6 @@
 package series
 
 import (
-	"errors"
 	influxdb "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api"
 	"time"
@@ -12,14 +11,14 @@ import (
 type KubernetesWriter interface {
 	Flush()
 	Errors() <- chan error
-	WriteNodePoint(tag *KubernetesNodeTag, field *KubernetesNodeField) error
-	WriteNodePointWithTime(tag *KubernetesNodeTag, field *KubernetesNodeField, timestamp time.Time) error
-	WritePodNetworkPoint(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField) error
-	WritePodNetworkPointWithTime(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField, timestamp time.Time) error
-	WritePodVolumePoint(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField) error
-	WritePodVolumePointWithTime(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField, timestamp time.Time) error
-	WritePodContainerPoint(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField) error
-	WritePodContainerPointWithTime(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField, timestamp time.Time) error
+	WriteNodePoint(tag *KubernetesNodeTag, field *KubernetesNodeField)
+	WriteNodePointWithTime(tag *KubernetesNodeTag, field *KubernetesNodeField, timestamp time.Time)
+	WritePodNetworkPoint(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField)
+	WritePodNetworkPointWithTime(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField, timestamp time.Time)
+	WritePodVolumePoint(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField)
+	WritePodVolumePointWithTime(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField, timestamp time.Time)
+	WritePodContainerPoint(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField)
+	WritePodContainerPointWithTime(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField, timestamp time.Time)
 }
 
 type kubernetesWriter struct {
@@ -38,78 +37,54 @@ func (w *kubernetesWriter) Errors() <-chan error {
 	return w.WriteAPI.Errors()
 }
 
-func (w *kubernetesWriter) WriteNodePoint(tag *KubernetesNodeTag, field *KubernetesNodeField) error {
-	return w.WriteNodePointWithTime(tag, field, time.Now())
+func (w *kubernetesWriter) WriteNodePoint(tag *KubernetesNodeTag, field *KubernetesNodeField) {
+	w.WriteNodePointWithTime(tag, field, time.Now())
 }
 
-func (w *kubernetesWriter) WriteNodePointWithTime(tag *KubernetesNodeTag, field *KubernetesNodeField, timestamp time.Time) error {
-	if tag == nil || field == nil {
-		return errors.New("nil point error")
-	}
+func (w *kubernetesWriter) WriteNodePointWithTime(tag *KubernetesNodeTag, field *KubernetesNodeField, timestamp time.Time) {
 	point := influxdb.NewPointWithMeasurement("kubernetes_node")
-	
 	point.AddTag("node_name", tag.NodeName)
-	
 	point.AddField("cpu_usage_core_nanoseconds", field.CpuUsageCoreNanoseconds)
 	point.AddField("memory_available_bytes", field.MemoryAvailableBytes)
 	w.WriteAPI.WritePoint(point)
-	return nil
 }
-func (w *kubernetesWriter) WritePodNetworkPoint(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField) error {
-	return w.WritePodNetworkPointWithTime(tag, field, time.Now())
+func (w *kubernetesWriter) WritePodNetworkPoint(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField) {
+	w.WritePodNetworkPointWithTime(tag, field, time.Now())
 }
 
-func (w *kubernetesWriter) WritePodNetworkPointWithTime(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField, timestamp time.Time) error {
-	if tag == nil || field == nil {
-		return errors.New("nil point error")
-	}
+func (w *kubernetesWriter) WritePodNetworkPointWithTime(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField, timestamp time.Time) {
 	point := influxdb.NewPointWithMeasurement("kubernetes_pod_network")
-	
 	point.AddTag("namespace", tag.Namespace)
 	point.AddTag("node_name", tag.NodeName)
 	point.AddTag("pod_name", tag.PodName)
-	
 	point.AddField("rx_bytes", field.RxBytes)
 	point.AddField("rx_errors", field.RxErrors)
 	w.WriteAPI.WritePoint(point)
-	return nil
 }
-func (w *kubernetesWriter) WritePodVolumePoint(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField) error {
-	return w.WritePodVolumePointWithTime(tag, field, time.Now())
+func (w *kubernetesWriter) WritePodVolumePoint(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField) {
+	w.WritePodVolumePointWithTime(tag, field, time.Now())
 }
 
-func (w *kubernetesWriter) WritePodVolumePointWithTime(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField, timestamp time.Time) error {
-	if tag == nil || field == nil {
-		return errors.New("nil point error")
-	}
+func (w *kubernetesWriter) WritePodVolumePointWithTime(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField, timestamp time.Time) {
 	point := influxdb.NewPointWithMeasurement("kubernetes_pod_volume")
-	
 	point.AddTag("namespace", tag.Namespace)
 	point.AddTag("node_name", tag.NodeName)
 	point.AddTag("pod_name", tag.PodName)
 	point.AddTag("volume_name", tag.VolumeName)
-	
 	point.AddField("available_bytes", field.AvailableBytes)
 	point.AddField("capacity_bytes", field.CapacityBytes)
 	point.AddField("used_bytes", field.UsedBytes)
 	w.WriteAPI.WritePoint(point)
-	return nil
 }
-func (w *kubernetesWriter) WritePodContainerPoint(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField) error {
-	return w.WritePodContainerPointWithTime(tag, field, time.Now())
+func (w *kubernetesWriter) WritePodContainerPoint(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField) {
+	w.WritePodContainerPointWithTime(tag, field, time.Now())
 }
 
-func (w *kubernetesWriter) WritePodContainerPointWithTime(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField, timestamp time.Time) error {
-	if tag == nil || field == nil {
-		return errors.New("nil point error")
-	}
+func (w *kubernetesWriter) WritePodContainerPointWithTime(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField, timestamp time.Time) {
 	point := influxdb.NewPointWithMeasurement("kubernetes_pod_container")
-	
 	point.AddTag("node_name", tag.NodeName)
 	point.AddTag("container_name", tag.ContainerName)
-	
 	point.AddField("cpu_usage_core_nanoseconds", field.CpuUsageCoreNanoseconds)
 	point.AddField("memory_usage_bytes", field.MemoryUsageBytes)
 	w.WriteAPI.WritePoint(point)
-	return nil
 }
