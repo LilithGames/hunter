@@ -33,8 +33,16 @@ func (w *{{ lowerCamelCase . }}Writer) Flush() {
 
 func (w *{{ lowerCamelCase . }}Writer) Errors() <-chan error {
 	return w.WriteAPI.Errors()
+}{{ range .Messages }}{{ $table := upperCamelCase . }}{{ $lowerSnakeTable := lowerSnakeCase . }}
+
+type {{ $project }}{{ $table }}Tag struct {
+	{{ $project }}_{{ $table }}_Tag
 }
-{{ range .Messages }}{{ $table := upperCamelCase . }}{{ $lowerSnakeTable := lowerSnakeCase . }}
+
+type {{ $project }}{{ $table }}Field struct {
+	{{ $project }}_{{ $table }}_Field
+}
+
 func (w *{{ $lowerCamelProject }}Writer) Write{{ $table }}Point(tag *{{ $project }}{{ $table }}Tag, field *{{ $project }}{{ $table }}Field) {
 	w.Write{{ $table }}PointWithTime(tag, field, time.Now())
 }

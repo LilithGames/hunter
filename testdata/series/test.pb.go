@@ -58,14 +58,14 @@ func (*Kubernetes) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0}
 }
 
-type KubernetesNode struct {
+type Kubernetes_Node struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *KubernetesNode) Reset() {
-	*x = KubernetesNode{}
+func (x *Kubernetes_Node) Reset() {
+	*x = Kubernetes_Node{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -73,13 +73,13 @@ func (x *KubernetesNode) Reset() {
 	}
 }
 
-func (x *KubernetesNode) String() string {
+func (x *Kubernetes_Node) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesNode) ProtoMessage() {}
+func (*Kubernetes_Node) ProtoMessage() {}
 
-func (x *KubernetesNode) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_Node) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -91,19 +91,19 @@ func (x *KubernetesNode) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesNode.ProtoReflect.Descriptor instead.
-func (*KubernetesNode) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_Node.ProtoReflect.Descriptor instead.
+func (*Kubernetes_Node) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 0}
 }
 
-type KubernetesPodNetwork struct {
+type Kubernetes_PodNetwork struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *KubernetesPodNetwork) Reset() {
-	*x = KubernetesPodNetwork{}
+func (x *Kubernetes_PodNetwork) Reset() {
+	*x = Kubernetes_PodNetwork{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -111,13 +111,13 @@ func (x *KubernetesPodNetwork) Reset() {
 	}
 }
 
-func (x *KubernetesPodNetwork) String() string {
+func (x *Kubernetes_PodNetwork) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodNetwork) ProtoMessage() {}
+func (*Kubernetes_PodNetwork) ProtoMessage() {}
 
-func (x *KubernetesPodNetwork) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodNetwork) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -129,19 +129,19 @@ func (x *KubernetesPodNetwork) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodNetwork.ProtoReflect.Descriptor instead.
-func (*KubernetesPodNetwork) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodNetwork.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodNetwork) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 1}
 }
 
-type KubernetesPodVolume struct {
+type Kubernetes_PodVolume struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *KubernetesPodVolume) Reset() {
-	*x = KubernetesPodVolume{}
+func (x *Kubernetes_PodVolume) Reset() {
+	*x = Kubernetes_PodVolume{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -149,13 +149,13 @@ func (x *KubernetesPodVolume) Reset() {
 	}
 }
 
-func (x *KubernetesPodVolume) String() string {
+func (x *Kubernetes_PodVolume) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodVolume) ProtoMessage() {}
+func (*Kubernetes_PodVolume) ProtoMessage() {}
 
-func (x *KubernetesPodVolume) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodVolume) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -167,19 +167,19 @@ func (x *KubernetesPodVolume) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodVolume.ProtoReflect.Descriptor instead.
-func (*KubernetesPodVolume) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodVolume.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodVolume) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 2}
 }
 
-type KubernetesPodContainer struct {
+type Kubernetes_PodContainer struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *KubernetesPodContainer) Reset() {
-	*x = KubernetesPodContainer{}
+func (x *Kubernetes_PodContainer) Reset() {
+	*x = Kubernetes_PodContainer{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -187,13 +187,13 @@ func (x *KubernetesPodContainer) Reset() {
 	}
 }
 
-func (x *KubernetesPodContainer) String() string {
+func (x *Kubernetes_PodContainer) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodContainer) ProtoMessage() {}
+func (*Kubernetes_PodContainer) ProtoMessage() {}
 
-func (x *KubernetesPodContainer) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodContainer) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -205,12 +205,12 @@ func (x *KubernetesPodContainer) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodContainer.ProtoReflect.Descriptor instead.
-func (*KubernetesPodContainer) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodContainer.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodContainer) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 3}
 }
 
-type KubernetesNodeTag struct {
+type Kubernetes_Node_Tag struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -218,8 +218,8 @@ type KubernetesNodeTag struct {
 	NodeName string `protobuf:"bytes,1,opt,name=node_name,json=nodeName,proto3" json:"node_name,omitempty"`
 }
 
-func (x *KubernetesNodeTag) Reset() {
-	*x = KubernetesNodeTag{}
+func (x *Kubernetes_Node_Tag) Reset() {
+	*x = Kubernetes_Node_Tag{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -227,13 +227,13 @@ func (x *KubernetesNodeTag) Reset() {
 	}
 }
 
-func (x *KubernetesNodeTag) String() string {
+func (x *Kubernetes_Node_Tag) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesNodeTag) ProtoMessage() {}
+func (*Kubernetes_Node_Tag) ProtoMessage() {}
 
-func (x *KubernetesNodeTag) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_Node_Tag) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -245,19 +245,19 @@ func (x *KubernetesNodeTag) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesNodeTag.ProtoReflect.Descriptor instead.
-func (*KubernetesNodeTag) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_Node_Tag.ProtoReflect.Descriptor instead.
+func (*Kubernetes_Node_Tag) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 0, 0}
 }
 
-func (x *KubernetesNodeTag) GetNodeName() string {
+func (x *Kubernetes_Node_Tag) GetNodeName() string {
 	if x != nil {
 		return x.NodeName
 	}
 	return ""
 }
 
-type KubernetesNodeField struct {
+type Kubernetes_Node_Field struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -266,8 +266,8 @@ type KubernetesNodeField struct {
 	MemoryAvailableBytes    int64 `protobuf:"varint,2,opt,name=memory_available_bytes,json=memoryAvailableBytes,proto3" json:"memory_available_bytes,omitempty"`
 }
 
-func (x *KubernetesNodeField) Reset() {
-	*x = KubernetesNodeField{}
+func (x *Kubernetes_Node_Field) Reset() {
+	*x = Kubernetes_Node_Field{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -275,13 +275,13 @@ func (x *KubernetesNodeField) Reset() {
 	}
 }
 
-func (x *KubernetesNodeField) String() string {
+func (x *Kubernetes_Node_Field) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesNodeField) ProtoMessage() {}
+func (*Kubernetes_Node_Field) ProtoMessage() {}
 
-func (x *KubernetesNodeField) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_Node_Field) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -293,26 +293,26 @@ func (x *KubernetesNodeField) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesNodeField.ProtoReflect.Descriptor instead.
-func (*KubernetesNodeField) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_Node_Field.ProtoReflect.Descriptor instead.
+func (*Kubernetes_Node_Field) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 0, 1}
 }
 
-func (x *KubernetesNodeField) GetCpuUsageCoreNanoseconds() int64 {
+func (x *Kubernetes_Node_Field) GetCpuUsageCoreNanoseconds() int64 {
 	if x != nil {
 		return x.CpuUsageCoreNanoseconds
 	}
 	return 0
 }
 
-func (x *KubernetesNodeField) GetMemoryAvailableBytes() int64 {
+func (x *Kubernetes_Node_Field) GetMemoryAvailableBytes() int64 {
 	if x != nil {
 		return x.MemoryAvailableBytes
 	}
 	return 0
 }
 
-type KubernetesPodNetworkTag struct {
+type Kubernetes_PodNetwork_Tag struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -322,8 +322,8 @@ type KubernetesPodNetworkTag struct {
 	PodName   string `protobuf:"bytes,3,opt,name=pod_name,json=podName,proto3" json:"pod_name,omitempty"`
 }
 
-func (x *KubernetesPodNetworkTag) Reset() {
-	*x = KubernetesPodNetworkTag{}
+func (x *Kubernetes_PodNetwork_Tag) Reset() {
+	*x = Kubernetes_PodNetwork_Tag{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -331,13 +331,13 @@ func (x *KubernetesPodNetworkTag) Reset() {
 	}
 }
 
-func (x *KubernetesPodNetworkTag) String() string {
+func (x *Kubernetes_PodNetwork_Tag) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodNetworkTag) ProtoMessage() {}
+func (*Kubernetes_PodNetwork_Tag) ProtoMessage() {}
 
-func (x *KubernetesPodNetworkTag) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodNetwork_Tag) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -349,33 +349,33 @@ func (x *KubernetesPodNetworkTag) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodNetworkTag.ProtoReflect.Descriptor instead.
-func (*KubernetesPodNetworkTag) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodNetwork_Tag.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodNetwork_Tag) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 1, 0}
 }
 
-func (x *KubernetesPodNetworkTag) GetNamespace() string {
+func (x *Kubernetes_PodNetwork_Tag) GetNamespace() string {
 	if x != nil {
 		return x.Namespace
 	}
 	return ""
 }
 
-func (x *KubernetesPodNetworkTag) GetNodeName() string {
+func (x *Kubernetes_PodNetwork_Tag) GetNodeName() string {
 	if x != nil {
 		return x.NodeName
 	}
 	return ""
 }
 
-func (x *KubernetesPodNetworkTag) GetPodName() string {
+func (x *Kubernetes_PodNetwork_Tag) GetPodName() string {
 	if x != nil {
 		return x.PodName
 	}
 	return ""
 }
 
-type KubernetesPodNetworkField struct {
+type Kubernetes_PodNetwork_Field struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -384,8 +384,8 @@ type KubernetesPodNetworkField struct {
 	RxErrors int64 `protobuf:"varint,2,opt,name=rx_errors,json=rxErrors,proto3" json:"rx_errors,omitempty"`
 }
 
-func (x *KubernetesPodNetworkField) Reset() {
-	*x = KubernetesPodNetworkField{}
+func (x *Kubernetes_PodNetwork_Field) Reset() {
+	*x = Kubernetes_PodNetwork_Field{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -393,13 +393,13 @@ func (x *KubernetesPodNetworkField) Reset() {
 	}
 }
 
-func (x *KubernetesPodNetworkField) String() string {
+func (x *Kubernetes_PodNetwork_Field) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodNetworkField) ProtoMessage() {}
+func (*Kubernetes_PodNetwork_Field) ProtoMessage() {}
 
-func (x *KubernetesPodNetworkField) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodNetwork_Field) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -411,26 +411,26 @@ func (x *KubernetesPodNetworkField) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodNetworkField.ProtoReflect.Descriptor instead.
-func (*KubernetesPodNetworkField) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodNetwork_Field.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodNetwork_Field) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 1, 1}
 }
 
-func (x *KubernetesPodNetworkField) GetRxBytes() int64 {
+func (x *Kubernetes_PodNetwork_Field) GetRxBytes() int64 {
 	if x != nil {
 		return x.RxBytes
 	}
 	return 0
 }
 
-func (x *KubernetesPodNetworkField) GetRxErrors() int64 {
+func (x *Kubernetes_PodNetwork_Field) GetRxErrors() int64 {
 	if x != nil {
 		return x.RxErrors
 	}
 	return 0
 }
 
-type KubernetesPodVolumeTag struct {
+type Kubernetes_PodVolume_Tag struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -441,8 +441,8 @@ type KubernetesPodVolumeTag struct {
 	VolumeName string `protobuf:"bytes,4,opt,name=volume_name,json=volumeName,proto3" json:"volume_name,omitempty"`
 }
 
-func (x *KubernetesPodVolumeTag) Reset() {
-	*x = KubernetesPodVolumeTag{}
+func (x *Kubernetes_PodVolume_Tag) Reset() {
+	*x = Kubernetes_PodVolume_Tag{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -450,13 +450,13 @@ func (x *KubernetesPodVolumeTag) Reset() {
 	}
 }
 
-func (x *KubernetesPodVolumeTag) String() string {
+func (x *Kubernetes_PodVolume_Tag) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodVolumeTag) ProtoMessage() {}
+func (*Kubernetes_PodVolume_Tag) ProtoMessage() {}
 
-func (x *KubernetesPodVolumeTag) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodVolume_Tag) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -468,40 +468,40 @@ func (x *KubernetesPodVolumeTag) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodVolumeTag.ProtoReflect.Descriptor instead.
-func (*KubernetesPodVolumeTag) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodVolume_Tag.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodVolume_Tag) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 2, 0}
 }
 
-func (x *KubernetesPodVolumeTag) GetNamespace() string {
+func (x *Kubernetes_PodVolume_Tag) GetNamespace() string {
 	if x != nil {
 		return x.Namespace
 	}
 	return ""
 }
 
-func (x *KubernetesPodVolumeTag) GetNodeName() string {
+func (x *Kubernetes_PodVolume_Tag) GetNodeName() string {
 	if x != nil {
 		return x.NodeName
 	}
 	return ""
 }
 
-func (x *KubernetesPodVolumeTag) GetPodName() string {
+func (x *Kubernetes_PodVolume_Tag) GetPodName() string {
 	if x != nil {
 		return x.PodName
 	}
 	return ""
 }
 
-func (x *KubernetesPodVolumeTag) GetVolumeName() string {
+func (x *Kubernetes_PodVolume_Tag) GetVolumeName() string {
 	if x != nil {
 		return x.VolumeName
 	}
 	return ""
 }
 
-type KubernetesPodVolumeField struct {
+type Kubernetes_PodVolume_Field struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -511,8 +511,8 @@ type KubernetesPodVolumeField struct {
 	UsedBytes      int64 `protobuf:"varint,3,opt,name=used_bytes,json=usedBytes,proto3" json:"used_bytes,omitempty"`
 }
 
-func (x *KubernetesPodVolumeField) Reset() {
-	*x = KubernetesPodVolumeField{}
+func (x *Kubernetes_PodVolume_Field) Reset() {
+	*x = Kubernetes_PodVolume_Field{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -520,13 +520,13 @@ func (x *KubernetesPodVolumeField) Reset() {
 	}
 }
 
-func (x *KubernetesPodVolumeField) String() string {
+func (x *Kubernetes_PodVolume_Field) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodVolumeField) ProtoMessage() {}
+func (*Kubernetes_PodVolume_Field) ProtoMessage() {}
 
-func (x *KubernetesPodVolumeField) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodVolume_Field) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -538,33 +538,33 @@ func (x *KubernetesPodVolumeField) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodVolumeField.ProtoReflect.Descriptor instead.
-func (*KubernetesPodVolumeField) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodVolume_Field.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodVolume_Field) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 2, 1}
 }
 
-func (x *KubernetesPodVolumeField) GetAvailableBytes() int64 {
+func (x *Kubernetes_PodVolume_Field) GetAvailableBytes() int64 {
 	if x != nil {
 		return x.AvailableBytes
 	}
 	return 0
 }
 
-func (x *KubernetesPodVolumeField) GetCapacityBytes() int64 {
+func (x *Kubernetes_PodVolume_Field) GetCapacityBytes() int64 {
 	if x != nil {
 		return x.CapacityBytes
 	}
 	return 0
 }
 
-func (x *KubernetesPodVolumeField) GetUsedBytes() int64 {
+func (x *Kubernetes_PodVolume_Field) GetUsedBytes() int64 {
 	if x != nil {
 		return x.UsedBytes
 	}
 	return 0
 }
 
-type KubernetesPodContainerTag struct {
+type Kubernetes_PodContainer_Tag struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -573,8 +573,8 @@ type KubernetesPodContainerTag struct {
 	ContainerName string `protobuf:"bytes,2,opt,name=container_name,json=containerName,proto3" json:"container_name,omitempty"`
 }
 
-func (x *KubernetesPodContainerTag) Reset() {
-	*x = KubernetesPodContainerTag{}
+func (x *Kubernetes_PodContainer_Tag) Reset() {
+	*x = Kubernetes_PodContainer_Tag{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[11]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -582,13 +582,13 @@ func (x *KubernetesPodContainerTag) Reset() {
 	}
 }
 
-func (x *KubernetesPodContainerTag) String() string {
+func (x *Kubernetes_PodContainer_Tag) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodContainerTag) ProtoMessage() {}
+func (*Kubernetes_PodContainer_Tag) ProtoMessage() {}
 
-func (x *KubernetesPodContainerTag) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodContainer_Tag) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[11]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -600,26 +600,26 @@ func (x *KubernetesPodContainerTag) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodContainerTag.ProtoReflect.Descriptor instead.
-func (*KubernetesPodContainerTag) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodContainer_Tag.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodContainer_Tag) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 3, 0}
 }
 
-func (x *KubernetesPodContainerTag) GetNodeName() string {
+func (x *Kubernetes_PodContainer_Tag) GetNodeName() string {
 	if x != nil {
 		return x.NodeName
 	}
 	return ""
 }
 
-func (x *KubernetesPodContainerTag) GetContainerName() string {
+func (x *Kubernetes_PodContainer_Tag) GetContainerName() string {
 	if x != nil {
 		return x.ContainerName
 	}
 	return ""
 }
 
-type KubernetesPodContainerField struct {
+type Kubernetes_PodContainer_Field struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -628,8 +628,8 @@ type KubernetesPodContainerField struct {
 	MemoryUsageBytes        int64 `protobuf:"varint,2,opt,name=memory_usage_bytes,json=memoryUsageBytes,proto3" json:"memory_usage_bytes,omitempty"`
 }
 
-func (x *KubernetesPodContainerField) Reset() {
-	*x = KubernetesPodContainerField{}
+func (x *Kubernetes_PodContainer_Field) Reset() {
+	*x = Kubernetes_PodContainer_Field{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_testdata_proto_test_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -637,13 +637,13 @@ func (x *KubernetesPodContainerField) Reset() {
 	}
 }
 
-func (x *KubernetesPodContainerField) String() string {
+func (x *Kubernetes_PodContainer_Field) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*KubernetesPodContainerField) ProtoMessage() {}
+func (*Kubernetes_PodContainer_Field) ProtoMessage() {}
 
-func (x *KubernetesPodContainerField) ProtoReflect() protoreflect.Message {
+func (x *Kubernetes_PodContainer_Field) ProtoReflect() protoreflect.Message {
 	mi := &file_testdata_proto_test_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -655,19 +655,19 @@ func (x *KubernetesPodContainerField) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use KubernetesPodContainerField.ProtoReflect.Descriptor instead.
-func (*KubernetesPodContainerField) Descriptor() ([]byte, []int) {
+// Deprecated: Use Kubernetes_PodContainer_Field.ProtoReflect.Descriptor instead.
+func (*Kubernetes_PodContainer_Field) Descriptor() ([]byte, []int) {
 	return file_testdata_proto_test_proto_rawDescGZIP(), []int{0, 3, 1}
 }
 
-func (x *KubernetesPodContainerField) GetCpuUsageCoreNanoseconds() int64 {
+func (x *Kubernetes_PodContainer_Field) GetCpuUsageCoreNanoseconds() int64 {
 	if x != nil {
 		return x.CpuUsageCoreNanoseconds
 	}
 	return 0
 }
 
-func (x *KubernetesPodContainerField) GetMemoryUsageBytes() int64 {
+func (x *Kubernetes_PodContainer_Field) GetMemoryUsageBytes() int64 {
 	if x != nil {
 		return x.MemoryUsageBytes
 	}
@@ -678,11 +678,11 @@ var File_testdata_proto_test_proto protoreflect.FileDescriptor
 
 var file_testdata_proto_test_proto_rawDesc = []byte{
 	0x0a, 0x19, 0x74, 0x65, 0x73, 0x74, 0x64, 0x61, 0x74, 0x61, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f,
-	0x2f, 0x74, 0x65, 0x73, 0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0xb9, 0x06, 0x0a, 0x0a,
-	0x6b, 0x75, 0x62, 0x65, 0x72, 0x6e, 0x65, 0x74, 0x65, 0x73, 0x1a, 0xa6, 0x01, 0x0a, 0x04, 0x6e,
-	0x6f, 0x64, 0x65, 0x1a, 0x22, 0x0a, 0x03, 0x74, 0x61, 0x67, 0x12, 0x1b, 0x0a, 0x09, 0x6e, 0x6f,
+	0x2f, 0x74, 0x65, 0x73, 0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0xb6, 0x06, 0x0a, 0x0a,
+	0x4b, 0x75, 0x62, 0x65, 0x72, 0x6e, 0x65, 0x74, 0x65, 0x73, 0x1a, 0xa6, 0x01, 0x0a, 0x04, 0x4e,
+	0x6f, 0x64, 0x65, 0x1a, 0x22, 0x0a, 0x03, 0x54, 0x61, 0x67, 0x12, 0x1b, 0x0a, 0x09, 0x6e, 0x6f,
 	0x64, 0x65, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x6e,
-	0x6f, 0x64, 0x65, 0x4e, 0x61, 0x6d, 0x65, 0x1a, 0x7a, 0x0a, 0x05, 0x66, 0x69, 0x65, 0x6c, 0x64,
+	0x6f, 0x64, 0x65, 0x4e, 0x61, 0x6d, 0x65, 0x1a, 0x7a, 0x0a, 0x05, 0x46, 0x69, 0x65, 0x6c, 0x64,
 	0x12, 0x3b, 0x0a, 0x1a, 0x63, 0x70, 0x75, 0x5f, 0x75, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x63, 0x6f,
 	0x72, 0x65, 0x5f, 0x6e, 0x61, 0x6e, 0x6f, 0x73, 0x65, 0x63, 0x6f, 0x6e, 0x64, 0x73, 0x18, 0x01,
 	0x20, 0x01, 0x28, 0x03, 0x52, 0x17, 0x63, 0x70, 0x75, 0x55, 0x73, 0x61, 0x67, 0x65, 0x43, 0x6f,
@@ -690,49 +690,48 @@ var file_testdata_proto_test_proto_rawDesc = []byte{
 	0x16, 0x6d, 0x65, 0x6d, 0x6f, 0x72, 0x79, 0x5f, 0x61, 0x76, 0x61, 0x69, 0x6c, 0x61, 0x62, 0x6c,
 	0x65, 0x5f, 0x62, 0x79, 0x74, 0x65, 0x73, 0x18, 0x02, 0x20, 0x01, 0x28, 0x03, 0x52, 0x14, 0x6d,
 	0x65, 0x6d, 0x6f, 0x72, 0x79, 0x41, 0x76, 0x61, 0x69, 0x6c, 0x61, 0x62, 0x6c, 0x65, 0x42, 0x79,
-	0x74, 0x65, 0x73, 0x1a, 0xab, 0x01, 0x0a, 0x0b, 0x70, 0x6f, 0x64, 0x5f, 0x6e, 0x65, 0x74, 0x77,
-	0x6f, 0x72, 0x6b, 0x1a, 0x5b, 0x0a, 0x03, 0x74, 0x61, 0x67, 0x12, 0x1c, 0x0a, 0x09, 0x6e, 0x61,
-	0x6d, 0x65, 0x73, 0x70, 0x61, 0x63, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x6e,
-	0x61, 0x6d, 0x65, 0x73, 0x70, 0x61, 0x63, 0x65, 0x12, 0x1b, 0x0a, 0x09, 0x6e, 0x6f, 0x64, 0x65,
-	0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x6e, 0x6f, 0x64,
-	0x65, 0x4e, 0x61, 0x6d, 0x65, 0x12, 0x19, 0x0a, 0x08, 0x70, 0x6f, 0x64, 0x5f, 0x6e, 0x61, 0x6d,
-	0x65, 0x18, 0x03, 0x20, 0x01, 0x28, 0x09, 0x52, 0x07, 0x70, 0x6f, 0x64, 0x4e, 0x61, 0x6d, 0x65,
-	0x1a, 0x3f, 0x0a, 0x05, 0x66, 0x69, 0x65, 0x6c, 0x64, 0x12, 0x19, 0x0a, 0x08, 0x72, 0x78, 0x5f,
-	0x62, 0x79, 0x74, 0x65, 0x73, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03, 0x52, 0x07, 0x72, 0x78, 0x42,
-	0x79, 0x74, 0x65, 0x73, 0x12, 0x1b, 0x0a, 0x09, 0x72, 0x78, 0x5f, 0x65, 0x72, 0x72, 0x6f, 0x72,
-	0x73, 0x18, 0x02, 0x20, 0x01, 0x28, 0x03, 0x52, 0x08, 0x72, 0x78, 0x45, 0x72, 0x72, 0x6f, 0x72,
-	0x73, 0x1a, 0x82, 0x02, 0x0a, 0x0a, 0x70, 0x6f, 0x64, 0x5f, 0x76, 0x6f, 0x6c, 0x75, 0x6d, 0x65,
-	0x1a, 0x7c, 0x0a, 0x03, 0x74, 0x61, 0x67, 0x12, 0x1c, 0x0a, 0x09, 0x6e, 0x61, 0x6d, 0x65, 0x73,
-	0x70, 0x61, 0x63, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x6e, 0x61, 0x6d, 0x65,
-	0x73, 0x70, 0x61, 0x63, 0x65, 0x12, 0x1b, 0x0a, 0x09, 0x6e, 0x6f, 0x64, 0x65, 0x5f, 0x6e, 0x61,
-	0x6d, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x6e, 0x6f, 0x64, 0x65, 0x4e, 0x61,
-	0x6d, 0x65, 0x12, 0x19, 0x0a, 0x08, 0x70, 0x6f, 0x64, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x03,
-	0x20, 0x01, 0x28, 0x09, 0x52, 0x07, 0x70, 0x6f, 0x64, 0x4e, 0x61, 0x6d, 0x65, 0x12, 0x1f, 0x0a,
-	0x0b, 0x76, 0x6f, 0x6c, 0x75, 0x6d, 0x65, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x04, 0x20, 0x01,
-	0x28, 0x09, 0x52, 0x0a, 0x76, 0x6f, 0x6c, 0x75, 0x6d, 0x65, 0x4e, 0x61, 0x6d, 0x65, 0x1a, 0x76,
-	0x0a, 0x05, 0x66, 0x69, 0x65, 0x6c, 0x64, 0x12, 0x27, 0x0a, 0x0f, 0x61, 0x76, 0x61, 0x69, 0x6c,
-	0x61, 0x62, 0x6c, 0x65, 0x5f, 0x62, 0x79, 0x74, 0x65, 0x73, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03,
-	0x52, 0x0e, 0x61, 0x76, 0x61, 0x69, 0x6c, 0x61, 0x62, 0x6c, 0x65, 0x42, 0x79, 0x74, 0x65, 0x73,
-	0x12, 0x25, 0x0a, 0x0e, 0x63, 0x61, 0x70, 0x61, 0x63, 0x69, 0x74, 0x79, 0x5f, 0x62, 0x79, 0x74,
-	0x65, 0x73, 0x18, 0x02, 0x20, 0x01, 0x28, 0x03, 0x52, 0x0d, 0x63, 0x61, 0x70, 0x61, 0x63, 0x69,
-	0x74, 0x79, 0x42, 0x79, 0x74, 0x65, 0x73, 0x12, 0x1d, 0x0a, 0x0a, 0x75, 0x73, 0x65, 0x64, 0x5f,
-	0x62, 0x79, 0x74, 0x65, 0x73, 0x18, 0x03, 0x20, 0x01, 0x28, 0x03, 0x52, 0x09, 0x75, 0x73, 0x65,
-	0x64, 0x42, 0x79, 0x74, 0x65, 0x73, 0x1a, 0xce, 0x01, 0x0a, 0x0d, 0x70, 0x6f, 0x64, 0x5f, 0x63,
-	0x6f, 0x6e, 0x74, 0x61, 0x69, 0x6e, 0x65, 0x72, 0x1a, 0x49, 0x0a, 0x03, 0x74, 0x61, 0x67, 0x12,
-	0x1b, 0x0a, 0x09, 0x6e, 0x6f, 0x64, 0x65, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x01, 0x20, 0x01,
-	0x28, 0x09, 0x52, 0x08, 0x6e, 0x6f, 0x64, 0x65, 0x4e, 0x61, 0x6d, 0x65, 0x12, 0x25, 0x0a, 0x0e,
-	0x63, 0x6f, 0x6e, 0x74, 0x61, 0x69, 0x6e, 0x65, 0x72, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x02,
-	0x20, 0x01, 0x28, 0x09, 0x52, 0x0d, 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x69, 0x6e, 0x65, 0x72, 0x4e,
-	0x61, 0x6d, 0x65, 0x1a, 0x72, 0x0a, 0x05, 0x66, 0x69, 0x65, 0x6c, 0x64, 0x12, 0x3b, 0x0a, 0x1a,
-	0x63, 0x70, 0x75, 0x5f, 0x75, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x63, 0x6f, 0x72, 0x65, 0x5f, 0x6e,
-	0x61, 0x6e, 0x6f, 0x73, 0x65, 0x63, 0x6f, 0x6e, 0x64, 0x73, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03,
-	0x52, 0x17, 0x63, 0x70, 0x75, 0x55, 0x73, 0x61, 0x67, 0x65, 0x43, 0x6f, 0x72, 0x65, 0x4e, 0x61,
-	0x6e, 0x6f, 0x73, 0x65, 0x63, 0x6f, 0x6e, 0x64, 0x73, 0x12, 0x2c, 0x0a, 0x12, 0x6d, 0x65, 0x6d,
-	0x6f, 0x72, 0x79, 0x5f, 0x75, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x62, 0x79, 0x74, 0x65, 0x73, 0x18,
-	0x02, 0x20, 0x01, 0x28, 0x03, 0x52, 0x10, 0x6d, 0x65, 0x6d, 0x6f, 0x72, 0x79, 0x55, 0x73, 0x61,
-	0x67, 0x65, 0x42, 0x79, 0x74, 0x65, 0x73, 0x42, 0x12, 0x5a, 0x10, 0x2f, 0x74, 0x65, 0x73, 0x74,
-	0x64, 0x61, 0x74, 0x61, 0x2f, 0x73, 0x65, 0x72, 0x69, 0x65, 0x73, 0x62, 0x06, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x33,
+	0x74, 0x65, 0x73, 0x1a, 0xaa, 0x01, 0x0a, 0x0a, 0x50, 0x6f, 0x64, 0x4e, 0x65, 0x74, 0x77, 0x6f,
+	0x72, 0x6b, 0x1a, 0x5b, 0x0a, 0x03, 0x54, 0x61, 0x67, 0x12, 0x1c, 0x0a, 0x09, 0x6e, 0x61, 0x6d,
+	0x65, 0x73, 0x70, 0x61, 0x63, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x6e, 0x61,
+	0x6d, 0x65, 0x73, 0x70, 0x61, 0x63, 0x65, 0x12, 0x1b, 0x0a, 0x09, 0x6e, 0x6f, 0x64, 0x65, 0x5f,
+	0x6e, 0x61, 0x6d, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x6e, 0x6f, 0x64, 0x65,
+	0x4e, 0x61, 0x6d, 0x65, 0x12, 0x19, 0x0a, 0x08, 0x70, 0x6f, 0x64, 0x5f, 0x6e, 0x61, 0x6d, 0x65,
+	0x18, 0x03, 0x20, 0x01, 0x28, 0x09, 0x52, 0x07, 0x70, 0x6f, 0x64, 0x4e, 0x61, 0x6d, 0x65, 0x1a,
+	0x3f, 0x0a, 0x05, 0x46, 0x69, 0x65, 0x6c, 0x64, 0x12, 0x19, 0x0a, 0x08, 0x72, 0x78, 0x5f, 0x62,
+	0x79, 0x74, 0x65, 0x73, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03, 0x52, 0x07, 0x72, 0x78, 0x42, 0x79,
+	0x74, 0x65, 0x73, 0x12, 0x1b, 0x0a, 0x09, 0x72, 0x78, 0x5f, 0x65, 0x72, 0x72, 0x6f, 0x72, 0x73,
+	0x18, 0x02, 0x20, 0x01, 0x28, 0x03, 0x52, 0x08, 0x72, 0x78, 0x45, 0x72, 0x72, 0x6f, 0x72, 0x73,
+	0x1a, 0x81, 0x02, 0x0a, 0x09, 0x50, 0x6f, 0x64, 0x56, 0x6f, 0x6c, 0x75, 0x6d, 0x65, 0x1a, 0x7c,
+	0x0a, 0x03, 0x54, 0x61, 0x67, 0x12, 0x1c, 0x0a, 0x09, 0x6e, 0x61, 0x6d, 0x65, 0x73, 0x70, 0x61,
+	0x63, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x6e, 0x61, 0x6d, 0x65, 0x73, 0x70,
+	0x61, 0x63, 0x65, 0x12, 0x1b, 0x0a, 0x09, 0x6e, 0x6f, 0x64, 0x65, 0x5f, 0x6e, 0x61, 0x6d, 0x65,
+	0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x6e, 0x6f, 0x64, 0x65, 0x4e, 0x61, 0x6d, 0x65,
+	0x12, 0x19, 0x0a, 0x08, 0x70, 0x6f, 0x64, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x03, 0x20, 0x01,
+	0x28, 0x09, 0x52, 0x07, 0x70, 0x6f, 0x64, 0x4e, 0x61, 0x6d, 0x65, 0x12, 0x1f, 0x0a, 0x0b, 0x76,
+	0x6f, 0x6c, 0x75, 0x6d, 0x65, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x04, 0x20, 0x01, 0x28, 0x09,
+	0x52, 0x0a, 0x76, 0x6f, 0x6c, 0x75, 0x6d, 0x65, 0x4e, 0x61, 0x6d, 0x65, 0x1a, 0x76, 0x0a, 0x05,
+	0x46, 0x69, 0x65, 0x6c, 0x64, 0x12, 0x27, 0x0a, 0x0f, 0x61, 0x76, 0x61, 0x69, 0x6c, 0x61, 0x62,
+	0x6c, 0x65, 0x5f, 0x62, 0x79, 0x74, 0x65, 0x73, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03, 0x52, 0x0e,
+	0x61, 0x76, 0x61, 0x69, 0x6c, 0x61, 0x62, 0x6c, 0x65, 0x42, 0x79, 0x74, 0x65, 0x73, 0x12, 0x25,
+	0x0a, 0x0e, 0x63, 0x61, 0x70, 0x61, 0x63, 0x69, 0x74, 0x79, 0x5f, 0x62, 0x79, 0x74, 0x65, 0x73,
+	0x18, 0x02, 0x20, 0x01, 0x28, 0x03, 0x52, 0x0d, 0x63, 0x61, 0x70, 0x61, 0x63, 0x69, 0x74, 0x79,
+	0x42, 0x79, 0x74, 0x65, 0x73, 0x12, 0x1d, 0x0a, 0x0a, 0x75, 0x73, 0x65, 0x64, 0x5f, 0x62, 0x79,
+	0x74, 0x65, 0x73, 0x18, 0x03, 0x20, 0x01, 0x28, 0x03, 0x52, 0x09, 0x75, 0x73, 0x65, 0x64, 0x42,
+	0x79, 0x74, 0x65, 0x73, 0x1a, 0xcd, 0x01, 0x0a, 0x0c, 0x50, 0x6f, 0x64, 0x43, 0x6f, 0x6e, 0x74,
+	0x61, 0x69, 0x6e, 0x65, 0x72, 0x1a, 0x49, 0x0a, 0x03, 0x54, 0x61, 0x67, 0x12, 0x1b, 0x0a, 0x09,
+	0x6e, 0x6f, 0x64, 0x65, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52,
+	0x08, 0x6e, 0x6f, 0x64, 0x65, 0x4e, 0x61, 0x6d, 0x65, 0x12, 0x25, 0x0a, 0x0e, 0x63, 0x6f, 0x6e,
+	0x74, 0x61, 0x69, 0x6e, 0x65, 0x72, 0x5f, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28,
+	0x09, 0x52, 0x0d, 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x69, 0x6e, 0x65, 0x72, 0x4e, 0x61, 0x6d, 0x65,
+	0x1a, 0x72, 0x0a, 0x05, 0x46, 0x69, 0x65, 0x6c, 0x64, 0x12, 0x3b, 0x0a, 0x1a, 0x63, 0x70, 0x75,
+	0x5f, 0x75, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x63, 0x6f, 0x72, 0x65, 0x5f, 0x6e, 0x61, 0x6e, 0x6f,
+	0x73, 0x65, 0x63, 0x6f, 0x6e, 0x64, 0x73, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03, 0x52, 0x17, 0x63,
+	0x70, 0x75, 0x55, 0x73, 0x61, 0x67, 0x65, 0x43, 0x6f, 0x72, 0x65, 0x4e, 0x61, 0x6e, 0x6f, 0x73,
+	0x65, 0x63, 0x6f, 0x6e, 0x64, 0x73, 0x12, 0x2c, 0x0a, 0x12, 0x6d, 0x65, 0x6d, 0x6f, 0x72, 0x79,
+	0x5f, 0x75, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x62, 0x79, 0x74, 0x65, 0x73, 0x18, 0x02, 0x20, 0x01,
+	0x28, 0x03, 0x52, 0x10, 0x6d, 0x65, 0x6d, 0x6f, 0x72, 0x79, 0x55, 0x73, 0x61, 0x67, 0x65, 0x42,
+	0x79, 0x74, 0x65, 0x73, 0x42, 0x12, 0x5a, 0x10, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x64, 0x61, 0x74,
+	0x61, 0x2f, 0x73, 0x65, 0x72, 0x69, 0x65, 0x73, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -749,19 +748,19 @@ func file_testdata_proto_test_proto_rawDescGZIP() []byte {
 
 var file_testdata_proto_test_proto_msgTypes = make([]protoimpl.MessageInfo, 13)
 var file_testdata_proto_test_proto_goTypes = []interface{}{
-	(*Kubernetes)(nil),                  // 0: kubernetes
-	(*KubernetesNode)(nil),              // 1: kubernetes.node
-	(*KubernetesPodNetwork)(nil),        // 2: kubernetes.pod_network
-	(*KubernetesPodVolume)(nil),         // 3: kubernetes.pod_volume
-	(*KubernetesPodContainer)(nil),      // 4: kubernetes.pod_container
-	(*KubernetesNodeTag)(nil),           // 5: kubernetes.node.tag
-	(*KubernetesNodeField)(nil),         // 6: kubernetes.node.field
-	(*KubernetesPodNetworkTag)(nil),     // 7: kubernetes.pod_network.tag
-	(*KubernetesPodNetworkField)(nil),   // 8: kubernetes.pod_network.field
-	(*KubernetesPodVolumeTag)(nil),      // 9: kubernetes.pod_volume.tag
-	(*KubernetesPodVolumeField)(nil),    // 10: kubernetes.pod_volume.field
-	(*KubernetesPodContainerTag)(nil),   // 11: kubernetes.pod_container.tag
-	(*KubernetesPodContainerField)(nil), // 12: kubernetes.pod_container.field
+	(*Kubernetes)(nil),                    // 0: Kubernetes
+	(*Kubernetes_Node)(nil),               // 1: Kubernetes.Node
+	(*Kubernetes_PodNetwork)(nil),         // 2: Kubernetes.PodNetwork
+	(*Kubernetes_PodVolume)(nil),          // 3: Kubernetes.PodVolume
+	(*Kubernetes_PodContainer)(nil),       // 4: Kubernetes.PodContainer
+	(*Kubernetes_Node_Tag)(nil),           // 5: Kubernetes.Node.Tag
+	(*Kubernetes_Node_Field)(nil),         // 6: Kubernetes.Node.Field
+	(*Kubernetes_PodNetwork_Tag)(nil),     // 7: Kubernetes.PodNetwork.Tag
+	(*Kubernetes_PodNetwork_Field)(nil),   // 8: Kubernetes.PodNetwork.Field
+	(*Kubernetes_PodVolume_Tag)(nil),      // 9: Kubernetes.PodVolume.Tag
+	(*Kubernetes_PodVolume_Field)(nil),    // 10: Kubernetes.PodVolume.Field
+	(*Kubernetes_PodContainer_Tag)(nil),   // 11: Kubernetes.PodContainer.Tag
+	(*Kubernetes_PodContainer_Field)(nil), // 12: Kubernetes.PodContainer.Field
 }
 var file_testdata_proto_test_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
@@ -790,7 +789,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesNode); i {
+			switch v := v.(*Kubernetes_Node); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -802,7 +801,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodNetwork); i {
+			switch v := v.(*Kubernetes_PodNetwork); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -814,7 +813,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodVolume); i {
+			switch v := v.(*Kubernetes_PodVolume); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -826,7 +825,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodContainer); i {
+			switch v := v.(*Kubernetes_PodContainer); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -838,7 +837,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesNodeTag); i {
+			switch v := v.(*Kubernetes_Node_Tag); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -850,7 +849,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesNodeField); i {
+			switch v := v.(*Kubernetes_Node_Field); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -862,7 +861,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodNetworkTag); i {
+			switch v := v.(*Kubernetes_PodNetwork_Tag); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -874,7 +873,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodNetworkField); i {
+			switch v := v.(*Kubernetes_PodNetwork_Field); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -886,7 +885,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodVolumeTag); i {
+			switch v := v.(*Kubernetes_PodVolume_Tag); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -898,7 +897,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodVolumeField); i {
+			switch v := v.(*Kubernetes_PodVolume_Field); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -910,7 +909,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodContainerTag); i {
+			switch v := v.(*Kubernetes_PodContainer_Tag); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -922,7 +921,7 @@ func file_testdata_proto_test_proto_init() {
 			}
 		}
 		file_testdata_proto_test_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*KubernetesPodContainerField); i {
+			switch v := v.(*Kubernetes_PodContainer_Field); i {
 			case 0:
 				return &v.state
 			case 1:

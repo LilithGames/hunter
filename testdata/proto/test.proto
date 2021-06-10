@@ -2,46 +2,46 @@ syntax = "proto3";
 
 option go_package = "/testdata/series";
 
-message kubernetes {
-  message node {
-    message tag {
+message Kubernetes {
+  message Node {
+    message Tag {
       string node_name = 1;
     }
-    message field {
+    message Field {
       int64 cpu_usage_core_nanoseconds = 1;
       int64 memory_available_bytes = 2;
     }
   }
-  message pod_network {
-    message tag {
+  message PodNetwork {
+    message Tag {
       string namespace = 1;
       string node_name = 2;
       string pod_name = 3;
     }
-    message field {
+    message Field {
       int64 rx_bytes = 1;
       int64 rx_errors = 2;
     }
   }
-  message pod_volume {
-    message tag {
+  message PodVolume {
+    message Tag {
       string namespace = 1;
       string node_name = 2;
       string pod_name = 3;
       string volume_name = 4;
     }
-    message field {
+    message Field {
       int64 available_bytes = 1;
       int64 capacity_bytes = 2;
       int64 used_bytes = 3;
     }
   }
-  message pod_container {
-    message tag {
+  message PodContainer {
+    message Tag {
       string node_name = 1;
       string container_name = 2;
     }
-    message field {
+    message Field {
       int64 cpu_usage_core_nanoseconds = 1;
       int64 memory_usage_bytes = 2;
     }

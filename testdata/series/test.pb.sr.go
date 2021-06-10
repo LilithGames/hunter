@@ -37,6 +37,14 @@ func (w *kubernetesWriter) Errors() <-chan error {
 	return w.WriteAPI.Errors()
 }
 
+type KubernetesNodeTag struct {
+	Kubernetes_Node_Tag
+}
+
+type KubernetesNodeField struct {
+	Kubernetes_Node_Field
+}
+
 func (w *kubernetesWriter) WriteNodePoint(tag *KubernetesNodeTag, field *KubernetesNodeField) {
 	w.WriteNodePointWithTime(tag, field, time.Now())
 }
@@ -48,6 +56,15 @@ func (w *kubernetesWriter) WriteNodePointWithTime(tag *KubernetesNodeTag, field 
 	point.AddField("memory_available_bytes", field.MemoryAvailableBytes)
 	w.WriteAPI.WritePoint(point)
 }
+
+type KubernetesPodNetworkTag struct {
+	Kubernetes_PodNetwork_Tag
+}
+
+type KubernetesPodNetworkField struct {
+	Kubernetes_PodNetwork_Field
+}
+
 func (w *kubernetesWriter) WritePodNetworkPoint(tag *KubernetesPodNetworkTag, field *KubernetesPodNetworkField) {
 	w.WritePodNetworkPointWithTime(tag, field, time.Now())
 }
@@ -61,6 +78,15 @@ func (w *kubernetesWriter) WritePodNetworkPointWithTime(tag *KubernetesPodNetwor
 	point.AddField("rx_errors", field.RxErrors)
 	w.WriteAPI.WritePoint(point)
 }
+
+type KubernetesPodVolumeTag struct {
+	Kubernetes_PodVolume_Tag
+}
+
+type KubernetesPodVolumeField struct {
+	Kubernetes_PodVolume_Field
+}
+
 func (w *kubernetesWriter) WritePodVolumePoint(tag *KubernetesPodVolumeTag, field *KubernetesPodVolumeField) {
 	w.WritePodVolumePointWithTime(tag, field, time.Now())
 }
@@ -76,6 +102,15 @@ func (w *kubernetesWriter) WritePodVolumePointWithTime(tag *KubernetesPodVolumeT
 	point.AddField("used_bytes", field.UsedBytes)
 	w.WriteAPI.WritePoint(point)
 }
+
+type KubernetesPodContainerTag struct {
+	Kubernetes_PodContainer_Tag
+}
+
+type KubernetesPodContainerField struct {
+	Kubernetes_PodContainer_Field
+}
+
 func (w *kubernetesWriter) WritePodContainerPoint(tag *KubernetesPodContainerTag, field *KubernetesPodContainerField) {
 	w.WritePodContainerPointWithTime(tag, field, time.Now())
 }
