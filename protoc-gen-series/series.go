@@ -41,6 +41,20 @@ func (m *seriesModule) Execute(targets map[string]pgs.File, packages map[string]
 		if len(f.Messages()) == 0 {
 			continue
 		}
+
+		needGenerate := false
+		for _, m := range f.AllMessages() {
+			for _, mm := range m.AllMessages(){
+				if mm.Name() == "Tag" || mm.Name() == "Field" {
+					needGenerate = true
+				}
+			}
+		}
+
+		if !needGenerate {
+			continue
+		}
+		
 		name := m.ctx.OutputPath(f).SetExt(".sr.go")
 		m.AddGeneratorTemplateFile(name.String(), m.tpl, f)
 	}

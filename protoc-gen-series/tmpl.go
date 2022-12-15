@@ -25,7 +25,7 @@ type {{ lowerCamelCase . }}Writer struct {
 
 func New{{ $project }}Writer(endpoint string) {{ $project }}Writer {
 	return &{{ lowerCamelCase . }}Writer{WriteAPI: influxdb.NewClient(endpoint, "").WriteAPI("", "")}
-} 
+}
 
 func (w *{{ lowerCamelCase . }}Writer) Flush() {
 	w.WriteAPI.Flush()
